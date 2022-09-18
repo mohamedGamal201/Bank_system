@@ -6,7 +6,7 @@ using namespace std;
 class Validation
 {
 public:
-	static bool name(string str);
-	static bool pass(string str);
+	static bool nameValid(string str);
+	static bool passValid(string str);
 };
 

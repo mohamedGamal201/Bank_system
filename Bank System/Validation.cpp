@@ -1,6 +1,6 @@
 #include "Validation.h"
 
-bool Validation::name(string name)
+bool Validation::nameValid(string name)
 {
 	bool valid = false;
 	if (name.size() >= 5 && name.size() <= 20)
@@ -22,7 +22,7 @@ bool Validation::name(string name)
 	return valid;
 }
 
-bool Validation::pass(string password)
+bool Validation::passValid(string password)
 {
 	
 	return (password.size() >= 8 && password.size() <= 20);

@@ -22,14 +22,14 @@ void Person::setId(int id)
 
 void Person::setName(string name)
 {
-	if (Validation::name(name))
+	if (Validation::nameValid(name))
 		this->name = name;
 	else
 		cout << "ERORR! The name must be contain 5 - 20 alphapetic character only " << endl;
 }
 void Person::setPassword(string password) 
 {
-	if (Validation::pass(password))
+	if (Validation::passValid(password))
 	{
 		this->password = password;
 	}
