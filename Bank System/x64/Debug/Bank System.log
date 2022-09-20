@@ -1,2 +1,3 @@
 ﻿  Bank System.cpp
-  Bank System.vcxproj -> D:\Porject Bank system\Bank System\x64\Debug\Bank System.exe
+C:\Users\H2\Downloads\my-github\Bank_system\Bank System\Client.h(46,19): warning C4551: function call missing argument list
+  Bank System.vcxproj -> C:\Users\H2\Downloads\my-github\Bank_system\x64\Debug\Bank System.exe
