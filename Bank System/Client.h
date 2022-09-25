@@ -43,7 +43,7 @@ public:
 		recipient.balance += amount;
 	};
 	void checkBalance() {
-		if (Validation::balanceValid)
+		if (Validation::balanceValid(balance))
 			cout << "Your balance is more than 1500 you can withdraw and transfer to" << endl;
 		else
 			cout << "Your balance is less than 1500 you can't withdraw and transfer to" << endl;

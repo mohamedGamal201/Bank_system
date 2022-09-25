@@ -41,7 +41,7 @@
     <ClInclude Include="FileManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CreateFiles.h">
+    <ClInclude Include="Parser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
