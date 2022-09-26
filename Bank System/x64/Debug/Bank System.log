@@ -1,6 +1,2 @@
 ﻿  Bank System.cpp
-C:\Users\H2\Downloads\my-github\Bank_system\Bank System\Employee.h(37,3): error C2653: 'FileManager': is not a class or namespace name
-C:\Users\H2\Downloads\my-github\Bank_system\Bank System\Employee.h(41,7): error C2653: 'FileManager': is not a class or namespace name
-C:\Users\H2\Downloads\my-github\Bank_system\Bank System\Employee.h(41,20): error C3861: 'getAllClients': identifier not found
-C:\Users\H2\Downloads\my-github\Bank_system\Bank System\Employee.h(53,7): error C2653: 'FileManager': is not a class or namespace name
-C:\Users\H2\Downloads\my-github\Bank_system\Bank System\Employee.h(53,20): error C3861: 'getAllClients': identifier not found
+  Bank System.vcxproj -> C:\Users\H2\Downloads\my-github\Bank_system\x64\Debug\Bank System.exe

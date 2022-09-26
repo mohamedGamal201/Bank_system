@@ -1,8 +1,7 @@
 #pragma once
 #include <string.h>
 #include "Person.h"
-#include<iostream>
-using namespace std;
+
 class Client : public Person
 {
 private:

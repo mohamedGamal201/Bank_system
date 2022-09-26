@@ -1,8 +1,6 @@
 #pragma once
-#include<iostream>
-#include<string.h>
+
 #include"Employee.h"
-#include<vector>
 #include "FileManager.h"
 using namespace std;
 

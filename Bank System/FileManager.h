@@ -1,9 +1,6 @@
 #pragma once
 #include"DataSourceInterface.h"
 #include"Parser.h"
-#include"Admin.h"
-#include"Client.h"
-#include"Employee.h"
 #include<string>
 
 class FileManager :public DataSourceInterface
