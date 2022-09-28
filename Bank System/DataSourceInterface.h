@@ -1,8 +1,6 @@
-#pragma once
-#include<vector>
-#include"Admin.h"
-#include"Client.h"
-#include"Employee.h"
+
+#include<iostream>
+using namespace std;
 
 
 class DataSourceInterface
@@ -18,4 +16,7 @@ public:
 	virtual void removeAllEmployees() = 0;
 	virtual void removeAllAdmins() = 0;
 };
+
+
+
 

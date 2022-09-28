@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1664308874 source:c:\users\h2\downloads\my-github\bank_system\bank system\filehelper.cpp
+	"FileHelper.h"
+
+1664359117 c:\users\h2\downloads\my-github\bank_system\bank system\filehelper.h
+
+1664355879 source:c:\users\h2\downloads\my-github\bank_system\bank system\bank system.cpp
+	<iostream>
+
