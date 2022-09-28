@@ -1,5 +1,5 @@
 
-
+#pragma once
 #include"Person.h"
 #include<string>
 #include"Client.h"

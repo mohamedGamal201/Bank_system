@@ -1,5 +1,10 @@
 
+#pragma once
 #include<iostream>
+#include<vector>
+#include"Admin.h"
+#include"Client.h"
+#include"Employee.h"
 using namespace std;
 
 

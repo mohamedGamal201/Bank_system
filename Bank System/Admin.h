@@ -1,6 +1,6 @@
 
 
-
+#pragma once
 #include"Employee.h"
 #include"Client.h"
 #include<string.h>
