@@ -1,10 +1,13 @@
 #include"Employee.h"
 #include"FileManager.h"
 #include"Validation.h"
-#include"string.h"
+#include<string>
 #include"Client.h"
 #include<vector>
 #include<iostream>
+#include<fstream>
+#include"Parser.h"
+#include<filesystem>
 using namespace std;
 
 
@@ -28,23 +31,16 @@ double Employee::getSalary() {
 };
 void Employee::display() {
 	Person::display();
-	cout << "Salary: " << getSalary() << endl;
+	cout << " Salary: " << getSalary() << endl;
 	cout << "\n**************************\n";
 };
 void Employee::addClient(Client& a) {
 	FileManager::addClient(a);
 }
-Client* Employee::searchClient(int id) {
-	vector<Client> v;
-	v = FileManager::getAllClients();
-	int pos = 0;
-	for (int i = 0; i < v.size(); i++) {
-		if (v[i].getId() == id) {
-			pos = i;
-			break;
-		}
-	}
-	return &v[pos];
+Client Employee::searchForClient(int id) {
+	Client c;
+	c = FileManager::searchForClient(id);
+	return c;
 }
 void Employee::listClient() {
 	vector<Client> v;
@@ -53,10 +49,25 @@ void Employee::listClient() {
 		v[i].display();
 	}
 }
-void Employee::editClient(int id, string name, string password, double balance) {
-	Client a;
-	a.setId(id);
-	a.setName(name);
-	a.setPassword(password);
-	a.setBalance(balance);
+void Employee::removeClient(Client &c) {
+	FileManager::removeClient(c);
+}
+
+void Employee::editClient(Client& c) {
+	removeClient(c);
+	int id, balance;
+	string name, password;
+	cout << "\nId: ";
+	cin >> id;
+	c.setId(id);
+	cout << "\nName: ";
+	cin >> name;
+	c.setName(name);
+	cout << "\nPassword: ";
+	cin >> password;
+	c.setPassword(password);
+	cout << "\nBalance: ";
+	cin >> balance;
+	c.setBalance(balance);
+	addClient(c);
 }

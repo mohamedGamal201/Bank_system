@@ -31,10 +31,27 @@ void Person::setName(string n) {
 void Person::setPassword(string p) {
 	if (Validation::passValid(p))
 		password = p;
-	else if (p.size() < 8)
-		cout << "You password should be more than 8" << endl;
-	else
-		cout << "You password should be less than 20" << endl;
+	else if (p.size() < 8) {
+		cout << " You password should be more than 8. Try again" << endl;
+		string pass;
+		while (!Validation::passValid(pass))
+		{
+			cout << " Password: ";
+			cin >> pass;
+		}
+		password = pass;
+	}	
+	else 
+	{
+		cout << "You password should be less than 20. Try again" << endl;
+		string pass;
+		while (!Validation::passValid(pass))
+		{
+			cout << " Password: ";
+			cin >> pass;
+		}
+		password = pass;
+	}
 
 };
 int Person::getId() {
@@ -47,7 +64,7 @@ string Person::getPassword() {
 	return password;
 };
 void Person::display() {
-	cout << "ID: " << getId() << endl;
-	cout << "Name: " << getName() << endl;
-	cout << "Password: " << getPassword() << endl;
+	cout << " ID: " << getId() << endl;
+	cout << " Name: " << getName() << endl;
+	cout << " Password: " << getPassword() << endl;
 };

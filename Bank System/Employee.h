@@ -15,9 +15,10 @@ public:
 	double getSalary();
 	void display();
 	void addClient(Client& a);
-	Client* searchClient(int id);
+	void removeClient(Client& c);
+	Client searchForClient(int id);
 	void listClient();
-	void editClient(int id, string name, string password, double balance);
+	void editClient(Client& c);
 };
 
 

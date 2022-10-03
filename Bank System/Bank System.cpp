@@ -1,13 +1,12 @@
 
 #include <iostream>
 using namespace std;
-#include"Person.h"
+#include"Screens.h"
 
 int main()
 {
-	Person p;
-	p.display();
-
+	
+	Screens::runApp();
 
 }
 

@@ -12,13 +12,13 @@ public:
 	Admin(int id, string name, string password, double salary);
 	void display();
 	void addClient(Client& c);
-	Client* searchClient(int id);
+	Client searchClient(int id);
 	void listClient();
-	void editClient(int id, string name, string password, double balance);
+	void editClient(Client c);
 	void addEmployee(Employee& e);
 	Employee* searchEmployee(int id);
 	void listEmployee();
-	void editEmployee(int id, string name, string password, double salary);
+	void editEmployee(Employee e);
 };
 
 

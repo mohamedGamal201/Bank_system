@@ -50,9 +50,9 @@ void Client::transferTo(double amount, Client& recipient)
 void Client::checkBalance()
 {
 	if (Validation::balanceValid(balance))
-		cout << "Your balance is more than 1500 you can withdraw and transfer to" << endl;
+		cout << "Your Balance is: "<<balance<<". So you can withdraw and transfer to" << endl;
 	else
-		cout << "Your balance is less than 1500 you can't withdraw and transfer to" << endl;
+		cout << "Your Balance is: "<<balance<<". You can't withdraw and transfer to" << endl;
 }
 void Client::display()
 {

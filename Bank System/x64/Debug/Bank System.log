@@ -1,10 +1,5 @@
-﻿  Admin.cpp
-  ClientManger.cpp
-  DataSourceInterface.cpp
-  Employee.cpp
-  FileHelper.cpp
-  FileManager.cpp
-  Parser.cpp
-  Validation.cpp
+﻿  AdminManager.cpp
+C:\Users\H2\Downloads\my-github\Bank_system\Bank System\AdminManager.cpp(186,11): warning C4129: 'E': unrecognized character escape sequence
+  EmployeeManager.cpp
   Generating Code...
   Bank System.vcxproj -> C:\Users\H2\Downloads\my-github\Bank_system\x64\Debug\Bank System.exe

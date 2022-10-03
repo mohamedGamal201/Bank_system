@@ -20,7 +20,7 @@ void Admin::display() {
 void Admin::addClient(Client& c) {
 	FileManager::addClient(c);
 }
-Client* Admin::searchClient(int id) {
+Client Admin::searchClient(int id) {
 	vector<Client> v;
 	v = FileManager::getAllClients();
 	int pos = 0;
@@ -30,7 +30,7 @@ Client* Admin::searchClient(int id) {
 			break;
 		}
 	}
-	return &v[pos];
+	return v[pos];
 }
 void Admin::listClient() {
 	vector<Client> v;
@@ -39,12 +39,23 @@ void Admin::listClient() {
 		v[i].display();
 	}
 }
-void Admin::editClient(int id, string name, string password, double balance) {
-	Client a;
-	a.setId(id);
-	a.setName(name);
-	a.setPassword(password);
-	a.setBalance(balance);
+void Admin::editClient(Client c) {
+	FileManager::removeClient(c);
+	int id, balance;
+	string name, password;
+	cout << "\nId: ";
+	cin >> id;
+	c.setId(id);
+	cout << "\nName: ";
+	cin >> name;
+	c.setName(name);
+	cout << "\nPassword: ";
+	cin >> password;
+	c.setPassword(password);
+	cout << "\nBalance: ";
+	cin >> balance;
+	c.setBalance(balance);
+	FileManager::addClient(c);
 }
 void Admin::addEmployee(Employee& e) {
 	FileManager::addEmployee(e);
@@ -68,10 +79,21 @@ void Admin::listEmployee() {
 		v[i].display();
 	}
 }
-void Admin::editEmployee(int id, string name, string password, double salary) {
-	Employee e;
+void Admin::editEmployee(Employee e) {
+	FileManager::removeEmployee(e);
+	int id, salary;
+	string name, password;
+	cout << "\nId: ";
+	cin >> id;
 	e.setId(id);
+	cout << "\nName: ";
+	cin >> name;
 	e.setName(name);
+	cout << "\nPassword: ";
+	cin >> password;
 	e.setPassword(password);
+	cout << "\nBalance: ";
+	cin >> salary;
 	e.setSalary(salary);
+	FileManager::addEmployee(e);
 }
